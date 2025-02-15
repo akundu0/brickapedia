@@ -2,6 +2,8 @@
     font-family: 'Kanit', serif;
     font-weight: 200;
     font-style: normal;
+    cursor: none !important;
+    background-image: url("assets/BRICKAPEDIA.png");
 }
 
 h1{
@@ -101,3 +103,26 @@ ul{
       border: none;
       z-index: 1; /* Lower than navbar */
   }
+
+input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+#search{
+    width: 1em;
+    height: auto;
+}
+
+.cursor-overlay {
+    position: absolute; /* Absolutely position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the iframe area */
+    height: 100%; /* Fill the iframe area */
+    background: transparent; /* Transparent background, allows interactions with iframe below */
+    cursor: url("assets/hand.png"); /* Change the cursor */
+    z-index: 10; /* Ensure overlay is above iframe */
+}
