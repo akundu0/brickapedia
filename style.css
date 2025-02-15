@@ -9,8 +9,20 @@ h1{
     padding: 30%;
     margin: 2%;
 }
-body{
-    background-color: #f2f0ef;
+body {
+  background-image: url("assets/BRICKAPEDIA.jpeg"); /* Your image path */
+  background-size: cover; /* Make sure the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Optional: keeps the image fixed when scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin: 0; /* Removes default margin from body */
+  height: 100vh; /* Ensures the body takes up the entire viewport height */
+  cursor: url('/assets/rs_hand.png'), auto;
+}
+
+
+a, button, * {
+  cursor: url('/assets/rs_hand.png'), auto;
 }
 
 /* STYLE NAV BAR
@@ -30,15 +42,14 @@ ul{
     padding: 1vw;
   }
    */
-  li:hover {
-    background-color: #DDA6B5;
-    color: white;
-  }
 
-  #browse:hover{
-    background-color: #C80e20;
 
-  }
+
+   #browse:hover {
+      background-color: #C80e20;
+      
+}
+
 
   #about:hover{
     background-color: #03671E;
@@ -47,7 +58,6 @@ ul{
   #team:hover{
     background-color: #0070B7;
   }
-
 
 
   /* Navbar Styling */
@@ -78,26 +88,11 @@ ul{
       padding: 10px 20px;
       background: #F8c60b;
       border-radius: 5px;
+      
+
+      
   }
 
-  /* Iframe Container */
-  .iframe-container {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-top: 56.2225%;
-      box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-      border-radius: 8px;
-      overflow: hidden;
-  }
-
-  /* Make sure iframe does not cover navbar */
-  iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      border: none;
-      z-index: 1; /* Lower than navbar */
-  }
+nav ul li:hover {
+    transform: scale(1.05); /* Slight pop effect on hover */
+}
