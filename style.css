@@ -1,0 +1,44 @@
+*{
+    font-family: 'Kanit', serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1{
+    text-align: left;
+    padding: 30%;
+    margin: 2%;
+}
+body{
+    background-color: #f2f0ef;
+}
+
+/* STYLE NAV BAR */
+ul{
+    list-style-type: none;
+    background-color: #FFFF;
+    padding: 1vw;
+    text-align: right;
+    margin: 0%;
+  }
+  
+  li{
+    display: inline;
+    text-decoration: none;
+    color: #746F72;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  
+  li:hover {
+    background-color: #DDA6B5;
+    color: white;
+  }
+
+  #browse:hover{
+    background-color: #C80e20;
+  }
+
+  #about:hover{
+    background-color: #33AC68;
+  }
