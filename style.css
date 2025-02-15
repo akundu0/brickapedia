@@ -2,6 +2,7 @@
     font-family: 'Kanit', serif;
     font-weight: 200;
     font-style: normal;
+    background-color: #F8C60B;
 }
 
 h1{
@@ -37,9 +38,9 @@ ul{
 
   #browse:hover{
     background-color: #C80e20;
-    
+
   }
 
   #about:hover{
-    background-color: #33AC68;
+    background-color: #03671E;
   }
