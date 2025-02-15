@@ -2,7 +2,6 @@
     font-family: 'Kanit', serif;
     font-weight: 200;
     font-style: normal;
-    background-color: #F8C60B;
 }
 
 h1{
@@ -14,10 +13,10 @@ body{
     background-color: #f2f0ef;
 }
 
-/* STYLE NAV BAR */
+/* STYLE NAV BAR
 ul{
     list-style-type: none;
-    background-color: #FFFF;
+    background-color: rgba(255, 0, 0, 100);;
     padding: 1vw;
     text-align: right;
     margin: 0%;
@@ -30,7 +29,7 @@ ul{
     font-size: 2vw;
     padding: 1vw;
   }
-  
+   */
   li:hover {
     background-color: #DDA6B5;
     color: white;
@@ -43,4 +42,62 @@ ul{
 
   #about:hover{
     background-color: #03671E;
+  }
+
+  #team:hover{
+    background-color: #0070B7;
+  }
+
+
+
+  /* Navbar Styling */
+  nav {
+      position: absolute; /* Keeps navbar on top of iframe */
+      background-color: none; /* Slight transparency */
+      color: black;
+      padding: 1vw;
+      text-align: right;
+      margin: 1%;
+      font-family: 'Kanit', sans-serif;
+      font-size: 25px;
+      z-index: 100; /* Higher than the iframe */
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0.00001%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+  }
+
+  nav ul li {
+      display: inline;
+      cursor: pointer;
+      padding: 10px 20px;
+      background: #F8c60b;
+      border-radius: 5px;
+  }
+
+  /* Iframe Container */
+  .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 56.2225%;
+      box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+      border-radius: 8px;
+      overflow: hidden;
+  }
+
+  /* Make sure iframe does not cover navbar */
+  iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+      z-index: 1; /* Lower than navbar */
   }
