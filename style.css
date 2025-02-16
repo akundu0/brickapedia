@@ -1,6 +1,6 @@
 *{
     font-family: 'Kanit', serif;
-    font-weight: 200;
+    font-weight: 275;
     font-style: normal;
 }
 
@@ -10,7 +10,7 @@ h1{
     margin: 2%;
 }
 body {
-  background-image: url("assets/BRICKAPEDIA.jpeg"); /* Your image path */
+  background-image: url("assets/bricky.png"); /* Your image path */
   background-size: cover; /* Make sure the image covers the whole screen */
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Optional: keeps the image fixed when scrolling */
@@ -90,5 +90,40 @@ ul{
   }
 
   nav ul li:hover {
+    cursor: url('/assets/rs_hand.png'), auto;
     transform: scale(1.05); /* Slight pop effect on hover */
 }
+
+#logo {
+  position: absolute;  /* Allows precise positioning */
+  top: 10px;           /* Distance from the top */
+  left: 1525px;         /* Distance from the right */
+  width: 150px;        /* Adjust size */
+}
+
+/* Remove link default styling */
+nav a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from the parent element */
+}
+
+#search {
+  width: 75px;
+  height: auto;
+}
+
+#set_id{
+  width: 700px;
+  height: 80px;
+  font-size: x-large;
+}
+
+.search_area {
+    display: flex; /* Enable Flexbox */
+    margin: 0.1%;
+    padding: 0;
+    justify-content: center; /* Horizontally centers the div */
+    align-items: center; /* Vertically centers the div */
+    height: 100vh; /* Take up the full viewport height */
+}
+
