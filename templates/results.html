@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Set Information</title>
+</head>
+<body>
+    <h1>Lego Set Info</h1>
+
+    <!-- Form to input set_id -->
+    <form action="/api/get_set" method="GET">
+        <label for="set_id">Enter Lego Set ID: </label>
+        <input type="text" id="set_id" name="set_id" value="{{ set_id }}" required>
+        <button type="submit">Get Set Info</button>
+    </form>
+
+    {% if set_info %}
+        <h2>Set Info for {{ set_info.set_id }}</h2>
+        <p>Name: {{ set_info.name }}</p>
+        <p>Year: {{ set_info.year }}</p>
+        <p>Pieces: {{ set_info.piece_count }}</p>
+        <p>Price: {{ set_info.price }}</p>
+        <img src="{{ set_info.set_img_url }}" alt="Set Image">
+    {% endif %}
+</body>
+</html>
