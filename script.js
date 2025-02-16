@@ -20,8 +20,3 @@ function fetchLegoSet() {
         .catch(error => console.error("Error:", error));
 }
 
-// cursor stuff
-window.onload = function() {
-    // Set the cursor visible immediately
-    document.querySelector('.cursor-overlay').style.cursor = "url('assets/hand.png'), pointer";
-};
