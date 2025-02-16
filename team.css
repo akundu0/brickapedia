@@ -10,52 +10,33 @@ h1{
     margin: 2%;
 }
 body {
-  background-image: url("assets/meetteam.png"); /* Your image path */
+  background-image: url("static/assets/meetteam.png"); /* Your image path */
   background-size: cover; /* Make sure the image covers the whole screen */
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Optional: keeps the image fixed when scrolling */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   margin: 0; /* Removes default margin from body */
   height: 100vh; /* Ensures the body takes up the entire viewport height */
-  cursor: url('/assets/rs_hand.png'), auto;
+  cursor: url('static/assets/rs_hand.png'), auto;
 }
 a, button, * {
-    cursor: url('/assets/rs_hand.png'), auto;
+    cursor: url('static/assets/rs_hand.png'), auto;
   }
   
-  /* STYLE NAV BAR
-  ul{
-      list-style-type: none;
-      background-color: rgba(255, 0, 0, 100);;
-      padding: 1vw;
-      text-align: right;
-      margin: 0%;
-    }
-    
-    li{
-      display: inline;
-      text-decoration: none;
-      color: #746F72;
-      font-size: 2vw;
-      padding: 1vw;
-    }
-     */
   
-  
-  
-     #browse:hover {
-        background-color: #C80e20;
+#browse:hover {
+    background-color: #C80e20;
         
-  }
+}
   
   
-    #about:hover{
-      background-color: #03671E;
-    }
+#about:hover{
+    background-color: #03671E;
+}
   
-    #team:hover{
-      background-color: #0070B7;
-    }
+#team:hover{
+    background-color: #0070B7;
+}
   
   
     /* Navbar Styling */
@@ -88,7 +69,7 @@ a, button, * {
     }
   
     nav ul li:hover {
-      cursor: url('/assets/rs_hand.png'), auto;
+      cursor: url('static/assets/rs_hand.png'), auto;
       transform: scale(1.05); /* Slight pop effect on hover */
   }
   
