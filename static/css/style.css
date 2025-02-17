@@ -1,7 +1,8 @@
 *{
-    font-family: 'Kanit', serif;
+    font-family: 'Kanit';
     font-weight: 275;
     font-style: normal;
+    cursor: url('../assets/rs_hand.png'), auto;
 }
 
 h1{
@@ -17,18 +18,15 @@ body {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   margin: 0; /* Removes default margin from body */
   height: 100vh; /* Ensures the body takes up the entire viewport height */
-  cursor: url('static/assets/rs_hand.png'), auto;
+  cursor: url('../assets/rs_hand.png'), auto;
 }
 
-
+button{
+  background-color: rgba(red, green, blue, alpha);
+  border-radius: 5%;
+}
 a, button, * {
-  cursor: url('static/assets/rs_hand.png'), auto;
-}
-
-
-   #browse:hover {
-      background-color: #C80e20;
-      
+  cursor: url('../assets/rs_hand.png'), auto;
 }
 
 
@@ -40,43 +38,48 @@ a, button, * {
     background-color: #0070B7;
   }
 
-
-  /* Navbar Styling */
   nav {
-      position: absolute; /* Keeps navbar on top of iframe */
-      background-color: none; /* Slight transparency */
-      color: black;
-      padding: 1vw;
-      text-align: right;
-      margin: 1%;
-      font-family: 'Kanit', sans-serif;
-      font-size: 25px;
-      z-index: 100; /* Higher than the iframe */
-  }
+    position: absolute; /* Keeps navbar on top of iframe */
+    background-color: none; /* Slight transparency */
+    color: black;
+    padding: 1vw;
+    text-align: right;
+    margin: 1%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    z-index: 100; /* Higher than the iframe */
+    top: 10px;
+}
 
-  nav ul {
-      list-style: none;
-      margin: 0.00001%;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-  }
+nav ul {
+    list-style: none;
+    margin: 0.00001%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 
-  nav ul li {
-      display: inline;
-      padding: 10px 20px;
-      background: #F8c60b;
-      border-radius: 5px;
-  }
+nav ul li {
+    display: inline;
+    padding: 10px 20px;
+    background: #F8c60b;
+    border-radius: 5px;
+}
 
-  nav ul li:hover {
-    cursor: url('static/assets/rs_hand.png'), auto;
-    transform: scale(1.05); /* Slight pop effect on hover */
+nav ul li:hover {
+  cursor: url('assets/rs_hand.png'), auto;
+  transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+/* Remove link default styling */
+nav a {
+text-decoration: none; /* Removes underline */
+color: inherit; /* Inherits color from the parent element */
 }
 
 #logo {
-  position: absolute;  /* Allows precise positioning */
+  position: fixed;  /* Allows precise positioning */
   top: 10px;           /* Distance from the top */
   left: 89%;         /* Distance from the right */
   width: 150px;        /* Adjust size */
@@ -108,3 +111,34 @@ nav a {
     height: 100vh; /* Take up the full viewport height */
 }
 
+.set_image{
+  width: auto;
+  height: 200px;
+}
+
+.set-container{
+  margin: 20px;
+  background-color: rgba(200, 14, 32, 0.5);
+  display:inline-block;
+  padding: 30px;
+}
+
+.set-container:hover{
+  transform:scale(1.03);
+}
+
+h2{
+  font-style:italic;
+  font-weight:300;
+}
+
+.all-sets{
+  margin-top: 10%;
+  margin-left: 3%;
+  z-index:1;
+}
+
+/* .background{
+  background-image: url('../assets/bg.png');
+  z-index: -1;
+} */

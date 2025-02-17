@@ -16,104 +16,168 @@
 </head>
 <nav>
     <ul>
-        <li id="browse">Browse Sets</li>
-        <li id="about"><a href="about.html">About</a></li>
-        <li id="team"><a href="team.html">Team</a></li>
+        <li id="team"><a href="{{ url_for('static', filename='team.html') }}">Team</a></li>
     </ul>
 </nav>
 <body>
+    {% if not output[0] %}
+
     <div class="search_area">
         <!-- Form to input set_id -->
     <form action="/api/search" method="GET">
         <label for="set_id"></label>
-        <input type="text" id="set_id" name="set_id" value="{{ set_id }}" placeholder="Enter Lego Set ID.." required>
-        <button type="submit">
+        <button type="submit" id="search_button">
             <img src="{{ url_for('static', filename='assets/search.png') }}" id="search">
         </button>
+        <input type="text" id="set_id" name="set_id" value="{{ set_id }}" placeholder="Enter Lego Set ID..." required>
+        
     </form>
     </div>
+    {% endif %}
     <a href="results.html">
         <img src="{{ url_for('static', filename='assets/logo.png') }}" id="logo">
-
     </a>
-    
 
     {% if output[0] %}
-        <h2>Set Info for {{ output[0].name }}</h2>
-        <p>ID: {{ output[0].set_id }}</p>
+    <!-- <div class="background">
+        <img src="{{ url_for('static', filename='assets/bg.png') }}">
+    </div> -->
+    <div class="all-sets">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[0].name }}</h2>
+        <p><strong>ID:</strong> {{ output[0].set_id }}</p>
         <p>Year: {{ output[0].year }}</p>
         <p>Pieces: {{ output[0].piece_count }}</p>
-        <img src="{{ output[0].set_img_url }}" alt="Set Image">
+        </div>
+        <img src="{{ output[0].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+        
     {% endif %}
     {% if output[1] %}
-        <h2>Set Info for {{ output[1].name }}</h2>
-        <p>ID: {{ output[1].set_id }}</p>
-        <p>Year: {{ output[1].year }}</p>
-        <p>Pieces: {{ output[1].piece_count }}</p>
-        <img src="{{ output[1].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[1].name }}</h2>
+            <p>ID: {{ output[1].set_id }}</p>
+            <p>Year: {{ output[1].year }}</p>
+            <p>Pieces: {{ output[1].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[1].set_img_url }}" alt="Set Image" class="set_image">
+    </div>  
     {% endif %}
     {% if output[2] %}
-        <h2>Set Info for {{ output[2].name }}</h2>
-        <p>ID: {{ output[2].set_id }}</p>
-        <p>Year: {{ output[2].year }}</p>
-        <p>Pieces: {{ output[2].piece_count }}</p>
-        <img src="{{ output[2].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[2].name }}</h2>
+            <p>ID: {{ output[2].set_id }}</p>
+            <p>Year: {{ output[2].year }}</p>
+            <p>Pieces: {{ output[2].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[2].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
     {% endif %}
     {% if output[3] %}
-        <h2>Set Info for {{ output[3].name }}</h2>
-        <p>ID: {{ output[3].set_id }}</p>
-        <p>Year: {{ output[3].year }}</p>
-        <p>Pieces: {{ output[3].piece_count }}</p>
-        <img src="{{ output[3].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[3].name }}</h2>
+            <p>ID: {{ output[3].set_id }}</p>
+            <p>Year: {{ output[3].year }}</p>
+            <p>Pieces: {{ output[3].piece_count }}</p>
+        </div>
+       
+        <img src="{{ output[3].set_img_url }}" alt="Set Image" class="set_image">
+    </div> 
     {% endif %}
     {% if output[4] %}
-        <h2>Set Info for {{ output[4].name }}</h2>
-        <p>ID: {{ output[4].set_id }}</p>
-        <p>Year: {{ output[4].year }}</p>
-        <p>Pieces: {{ output[4].piece_count }}</p>
-        <img src="{{ output[4].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[4].name }}</h2>
+            <p>ID: {{ output[4].set_id }}</p>
+            <p>Year: {{ output[4].year }}</p>
+            <p>Pieces: {{ output[4].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[4].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+        
     {% endif %}
     {% if output[5] %}
-        <h2>Set Info for {{ output[5].name }}</h2>
-        <p>ID: {{ output[5].set_id }}</p>
-        <p>Year: {{ output[5].year }}</p>
-        <p>Pieces: {{ output[5].piece_count }}</p>
-        <img src="{{ output[5].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[5].name }}</h2>
+            <p>ID: {{ output[5].set_id }}</p>
+            <p>Year: {{ output[5].year }}</p>
+            <p>Pieces: {{ output[5].piece_count }}</p>
+        </div>
+       
+        <img src="{{ output[5].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+        
     {% endif %}
     {% if output[6] %}
-        <h2>Set Info for {{ output[6].name }}</h2>
-        <p>ID: {{ output[6].set_id }}</p>
-        <p>Year: {{ output[6].year }}</p>
-        <p>Pieces: {{ output[6].piece_count }}</p>
-        <img src="{{ output[6].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[6].name }}</h2>
+            <p>ID: {{ output[6].set_id }}</p>
+            <p>Year: {{ output[6].year }}</p>
+            <p>Pieces: {{ output[6].piece_count }}</p>
+        </div>
+       
+        <img src="{{ output[6].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
     {% endif %}
     {% if output[7] %}
-        <h2>Set Info for {{ output[7].name }}</h2>
-        <p>ID: {{ output[7].set_id }}</p>
-        <p>Year: {{ output[7].year }}</p>
-        <p>Pieces: {{ output[7].piece_count }}</p>
-        <img src="{{ output[7].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[7].name }}</h2>
+            <p>ID: {{ output[7].set_id }}</p>
+            <p>Year: {{ output[7].year }}</p>
+            <p>Pieces: {{ output[7].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[7].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
     {% endif %}
     {% if output[8] %}
-        <h2>Set Info for {{ output[8].name }}</h2>
-        <p>ID: {{ output[8].set_id }}</p>
-        <p>Year: {{ output[8].year }}</p>
-        <p>Pieces: {{ output[8].piece_count }}</p>
-        <img src="{{ output[8].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[8].name }}</h2>
+            <p>ID: {{ output[8].set_id }}</p>
+            <p>Year: {{ output[8].year }}</p>
+            <p>Pieces: {{ output[8].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[8].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+        
     {% endif %}
     {% if output[9] %}
-        <h2>Set Info for {{ output[9].name }}</h2>
-        <p>ID: {{ output[9].set_id }}</p>
-        <p>Year: {{ output[9].year }}</p>
-        <p>Pieces: {{ output[9].piece_count }}</p>
-        <img src="{{ output[9].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[9].name }}</h2>
+            <p>ID: {{ output[9].set_id }}</p>
+            <p>Year: {{ output[9].year }}</p>
+            <p>Pieces: {{ output[9].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[9].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+        
     {% endif %}
     {% if output[10] %}
-        <h2>Set Info for {{ output[10].name }}</h2>
-        <p>ID: {{ output[10].set_id }}</p>
-        <p>Year: {{ output[10].year }}</p>
-        <p>Pieces: {{ output[10].piece_count }}</p>
-        <img src="{{ output[10].set_img_url }}" alt="Set Image">
+    <div class="set-container">
+        <div>
+            <h2>Set Info for {{ output[10].name }}</h2>
+            <p>ID: {{ output[10].set_id }}</p>
+            <p>Year: {{ output[10].year }}</p>
+            <p>Pieces: {{ output[10].piece_count }}</p>
+        </div>
+        
+        <img src="{{ output[10].set_img_url }}" alt="Set Image" class="set_image">
+    </div>
+    </div>
     {% endif %}
 </body>
 </html>
