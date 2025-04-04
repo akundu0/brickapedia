@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+
+    <!--<link rel="stylesheet" href="/team.css" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
 *{
     font-family: 'Kanit', serif;
     font-weight: 275;
@@ -10,52 +24,33 @@ h1{
     margin: 2%;
 }
 body {
-  background-image: url("assets/meetteam.png"); /* Your image path */
+  background-image: url("assets/team.png"); /* Your image path */
   background-size: cover; /* Make sure the image covers the whole screen */
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Optional: keeps the image fixed when scrolling */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   margin: 0; /* Removes default margin from body */
   height: 100vh; /* Ensures the body takes up the entire viewport height */
-  cursor: url('/assets/rs_hand.png'), auto;
+  cursor: url('assets/rs_hand.png'), auto;
 }
 a, button, * {
-    cursor: url('/assets/rs_hand.png'), auto;
+    cursor: url('assets/rs_hand.png'), auto;
   }
   
-  /* STYLE NAV BAR
-  ul{
-      list-style-type: none;
-      background-color: rgba(255, 0, 0, 100);;
-      padding: 1vw;
-      text-align: right;
-      margin: 0%;
-    }
-    
-    li{
-      display: inline;
-      text-decoration: none;
-      color: #746F72;
-      font-size: 2vw;
-      padding: 1vw;
-    }
-     */
   
-  
-  
-     #browse:hover {
-        background-color: #C80e20;
+#browse:hover {
+    background-color: #C80e20;
         
-  }
+}
   
   
-    #about:hover{
-      background-color: #03671E;
-    }
+#about:hover{
+    background-color: #03671E;
+}
   
-    #team:hover{
-      background-color: #0070B7;
-    }
+#team:hover{
+    background-color: #0070B7;
+}
   
   
     /* Navbar Styling */
@@ -88,7 +83,7 @@ a, button, * {
     }
   
     nav ul li:hover {
-      cursor: url('/assets/rs_hand.png'), auto;
+      cursor: url('assets/rs_hand.png'), auto;
       transform: scale(1.05); /* Slight pop effect on hover */
   }
   
@@ -125,7 +120,39 @@ a, button, * {
 #logo {
     position: absolute;  /* Allows precise positioning */
     top: 10px;           /* Distance from the top */
-    left: 1525px;         /* Distance from the right */
+    left: 89%;         /* Distance from the right */
     width: 150px;        /* Adjust size */
   }
   
+    </style>
+</head>
+<nav>
+    <ul>
+        <li id="team"><a href="team.html">Team</a></li>
+    </ul>
+</nav>
+<body>
+    <!--
+    <div class="container">
+        <div class="image-container">
+            <div class="peeps">
+                <img src="assets/neesh.png">
+                <h2>Director of Back End Development</h2>
+                <p>Anisha is a freshman at UNC, majoring in Computer Science and Biomedical Engineering! She loves to crochet in her free time.</p>
+            </div>
+            <div class="peeps">
+                <img src="assets/riya.png">
+                <h2>Director of Front End Development</h2>
+                <p>Riya is a freshman at UNC. She is majoring in Biology on the pre-med track. In her free time, she loves to dance!</p>
+            </div>
+            
+        </div>
+    </div>
+    -->
+    
+    <a href="../api/search">
+        <img src="assets/logo.png" id="logo">
+
+    </a>
+</body>
+</html>

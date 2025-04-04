@@ -20,3 +20,8 @@ function fetchLegoSet() {
         .catch(error => console.error("Error:", error));
 }
 
+var button = document.getElementById("search_button");
+
+button.addEventListener("click", function(){
+    document.body.style.backgroundImage = "url('/static/assets/bg.png')";
+});

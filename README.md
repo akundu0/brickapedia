@@ -12,3 +12,4 @@ Color scheme:
 Image credits:
  Lego Background photo: <a href='https://pngtree.com/freebackground/colorful-tetris-lego-blocks-background_1340017.html'>free background photos from pngtree.com/</a>
 
+Rebrickable API docs: https://rebrickable.com/api/v3/docs/

@@ -1,0 +1,112 @@
+*{
+    font-family: 'Kanit', serif;
+    font-weight: 275;
+    font-style: normal;
+}
+
+h1{
+    text-align: left;
+    padding: 30%;
+    margin: 2%;
+}
+body {
+  background-image: url("/static/assets/team.png"); /* Your image path */
+  background-size: cover; /* Make sure the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Optional: keeps the image fixed when scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin: 0; /* Removes default margin from body */
+  height: 100vh; /* Ensures the body takes up the entire viewport height */
+  cursor: url('static/assets/rs_hand.png'), auto;
+}
+a, button, * {
+    cursor: url('static/assets/rs_hand.png'), auto;
+  }
+  
+
+  
+#about:hover{
+    background-color: #03671E;
+}
+  
+#team:hover{
+    background-color: #0070B7;
+}
+  
+  
+    /* Navbar Styling */
+    nav {
+        position: absolute; /* Keeps navbar on top of iframe */
+        background-color: none; /* Slight transparency */
+        color: black;
+        padding: 1vw;
+        text-align: right;
+        margin: 1%;
+        font-family: 'Kanit', sans-serif;
+        font-size: 25px;
+        z-index: 100; /* Higher than the iframe */
+    }
+  
+    nav ul {
+        list-style: none;
+        margin: 0.00001%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+  
+    nav ul li {
+        display: inline;
+        padding: 10px 20px;
+        background: #F8c60b;
+        border-radius: 5px;
+    }
+  
+    nav ul li:hover {
+      cursor: url('static/assets/rs_hand.png'), auto;
+      transform: scale(1.05); /* Slight pop effect on hover */
+  }
+  
+  /* Remove link default styling */
+  nav a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from the parent element */
+  }
+
+
+
+.container {
+    width: 80%; /* Full width */
+    height: 80vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}
+
+/* Image container for side-by-side alignment */
+.image-container {
+    display: flex; /* Makes the images sit side by side */
+    gap: 300px; /* Space between images */
+    position: relative;
+    top: -50px; /* Moves the images slightly above center */
+}
+
+/* Image styling */
+.image-container img {
+    width: 400px; /* Adjust image size */
+    height: auto; /* Keep aspect ratio */
+    display: block;
+}
+
+
+
+#logo {
+    position: absolute;  /* Allows precise positioning */
+    top: 10px;           /* Distance from the top */
+    left: 1525px;         /* Distance from the right */
+    width: 150px;        /* Adjust size */
+  }
+  
+  
