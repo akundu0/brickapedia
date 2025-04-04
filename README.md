@@ -5,7 +5,7 @@ Color scheme:
 - Dark Azure: #469BC3
 - Blue:  #0070B7
 - Green: #03671E
-- Yellow: #FBC508
+- Yellow: #F8c60b
 - Orange:  #F24B06
 - Red:  #C80E20
 
